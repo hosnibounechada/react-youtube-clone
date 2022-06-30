@@ -1,6 +1,6 @@
 .video-item {
     display: flex !important;
-    align-items: center !important;
+    /* align-items: center !important; */
     cursor: pointer;
 }
 
@@ -10,7 +10,20 @@
 
 .video-title {
 line-height:20px;
-height:40px;
-
+max-height: 60px;
 overflow: hidden;
+
+display: block;
+margin: 0;
+font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+font-weight: 700;
+color: white;
+}
+
+.header-title {
+    display: block;
+    margin: 0;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    font-weight: 700;
+    color: white;
 }

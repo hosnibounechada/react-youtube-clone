@@ -14,8 +14,8 @@ class VideoItem extends React.Component {
           alt={this.props.video.snippet.title}
         />
         <div className="content">
-          <div className="header">{this.props.video.snippet.title}</div>
-          <b>
+          <div className="video-title">{this.props.video.snippet.title}</div>
+          <b style={{ color: "#AAAAAA" }}>
             <i className="user icon" />
             {this.props.video.snippet.channelTitle}
           </b>

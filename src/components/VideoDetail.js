@@ -7,6 +7,7 @@ class VideoDetail extends React.Component {
   }
   render() {
     if (!this.props.video) return "no video selected yet";
+    console.log(this.props.video);
     return (
       <div>
         <div className="ui embed">

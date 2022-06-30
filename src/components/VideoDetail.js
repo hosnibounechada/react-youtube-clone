@@ -6,7 +6,12 @@ class VideoDetail extends React.Component {
     else return this.props.video.snippet.title;
   }
   render() {
-    if (!this.props.video) return "no video selected yet";
+    if (!this.props.video)
+      return (
+        <div class="ui active dimmer">
+          <div class="ui massive text loader">Loading</div>
+        </div>
+      );
     console.log(this.props.video);
     return (
       <div>
